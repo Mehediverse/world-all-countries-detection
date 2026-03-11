@@ -1,6 +1,6 @@
 """
 Advanced Country Detection Module with Area Code Support
-Handles 100k+ phone numbers with precise detection for shared country codes
+Handles phone numbers with precise detection for shared country codes
 """
 
 from countrydetect import COUNTRY_CODES, COUNTRY_MAP, detect_country as basic_detect, get_country_name
@@ -506,3 +506,4 @@ def bulk_detect(phone_numbers, show_confidence=False):
             country = detect_country_advanced(number)
             results.append((number, country))
     return results
+
