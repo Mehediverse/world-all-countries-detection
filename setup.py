@@ -1,7 +1,12 @@
 from setuptools import setup, find_packages
+import os
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+# Read README if it exists, otherwise use description
+long_description = "Advanced phone number country detection with 100% coverage for shared country codes. Supports 250 countries with intelligent area code detection for 12 shared prefix groups."
+
+if os.path.exists("README.md"):
+    with open("README.md", "r", encoding="utf-8") as fh:
+        long_description = fh.read()
 
 setup(
     name="world-all-countries-detection",
