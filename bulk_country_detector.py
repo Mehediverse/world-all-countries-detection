@@ -1,5 +1,5 @@
 """
-Bulk Country Detector for 100k+ Phone Numbers
+Bulk Country Detector for Phone Numbers
 Supports Excel, CSV, PDF files with advanced area code detection
 """
 
@@ -349,3 +349,4 @@ if __name__ == "__main__":
     print()
     print("✅ Processing complete!")
     print()
+
